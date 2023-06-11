@@ -37,16 +37,9 @@ Now we'll introduce the error so you can see how it looks, it will always be at 
 
 
 ```mojo
-add_positives[3, 5]()
+let res1 = add_positives[3, 5]()
+print(res1) # output : 8
 ```
-
-    error: Expression [4]:6:1: no viable expansions found
-    fn __lldb_expr__(inout __mojo_repl_arg: __mojo_repl_context__):
-    ...
-    Expression [2]:6:29:               constraint failed: param assertion failed
-        assert_param[x % 2 == 0]()
-                                ^
-    
 
 
 ## assert_param_msg
